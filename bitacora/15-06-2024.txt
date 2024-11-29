@@ -1,0 +1,14 @@
+inicio.php:
+
+inicio llama nombre de empelador
+boton de postulacion funcional
+
+chambas.php:
+
+dice trabajos publicados y trabajos a los que se postuló
+
+publicar.php:
+
+ya el formulario llama la id del usuario el qeu hace la publiacion para tomar registro y llamarlo en inicio y en inicio.php muestra toda la info
+
+

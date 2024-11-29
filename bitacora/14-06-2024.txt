@@ -1,0 +1,8 @@
+parches de seguridad solo inicio con id del usuario
+
+llamar nombre del usuario en la barra de contenido 
+
+perfil esta melo y funcional
+
+index de obligacion que no permite accerder a la inofrmacion de la pqaguina sin iniciar
+

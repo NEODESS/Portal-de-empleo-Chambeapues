@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./assets/img/faviconcp.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Contenedores</title>
+    <style>
+        .contenedor.hidden {
+            display: none;
+        }
+        .contenedor {
+            text-align: center;
+            margin: 0 auto;
+            width: 300px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            color: #fff;
+            background-color: #14a800;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor1" class="contenedor">
+        <img src="assets/meme/foto1.jpeg" alt="Imagen 1">
+        <button onclick="mostrarSiguiente()">Esta bien</button>
+    </div>
+    <div id="contenedor2" class="contenedor hidden">
+        <img src="assets/meme/foto2.jpeg" alt="Imagen 2">
+        <button onclick="mostrarSiguiente()">Siii</button>
+    </div>
+    <div id="contenedor3" class="contenedor hidden">
+        <img src="assets/meme/foto3.jpeg" alt="Imagen 3">
+        <button onclick="mostrarSiguiente()">Okey</button>
+    </div>
+    <div id="contenedor4" class="contenedor hidden">
+        <img src="assets/meme/foto4.jpeg" alt="Imagen 4">
+        <p>Tienes que iniciar sesion</p>
+        <a href="login.php"><button>Iniciar</button></a>
+    </div>
+
+    <script>
+        let contador = 1;
+
+        function mostrarSiguiente() {
+            contador++;
+            if (contador <= 4) {
+                // Oculta el contenedor actual
+                document.getElementById(`contenedor${contador - 1}`).classList.add('hidden');
+                // Muestra el siguiente contenedor
+                document.getElementById(`contenedor${contador}`).classList.remove('hidden');
+            } else {
+                alert('No hay más contenedores para mostrar.');
+            }
+        }
+    </script>
+</body>
+
+</html>

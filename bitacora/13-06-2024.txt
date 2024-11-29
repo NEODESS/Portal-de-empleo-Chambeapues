@@ -1,0 +1,23 @@
+seguridad:
+-es muy basica se crea una id unica durante la sesion del usuario
+-no se puede ingresar a ver contenido sin iniciar sesion
+-el boton de cerrar sesion es dudoso qeu si cumpla su funcion 
+
+cambios en visual de la pagina:
+inicio.php //se agrego contenedor que trae trabajos de la base de datos
+perfil.php //se agrego contenedor para der informacion del usuario(se necesita implementar sesion unica por ide de usuario al ingresar)
+mesajes.php //se pospone ya que toma mucho tiempo
+chambas.php // requiere contenido lo cual sera con la informacion del ususario que ingresa
+publicar.php // se arego un formulario completamente funcional que envia informacion que se podra ver en inicio.php
+analisis.php //*se requiere modale y arrglos de diseño*
+configuracion.php //se agregaron contenedores y formularios los cuales solo son visibles, no tinen funcionavilidad
+ayuda.php // se requiere poner informacion real
+
+
+config:
+se agrego config/publlicar.php que es codigo para enviar a la base de datos la informacion de publicar.php
+
+data:
+
+-se agregaron distintas actualizaciones para el mejor funcionamiento.
+-se modifico la zona horaria para que la fecha de registro sea ma sexacta.
